@@ -27,15 +27,15 @@ class Tree {
 
     // Creating method for growing.
     func grow() {
-        self.feetTall = feetTall + 5
+        self.feetTall = feetTall + 7
         self.numLeaves = numLeaves + 1000
         self.age = age + 1
     }
 
     // Creating method for slowing growing.
     func growSlow() {
-        self.feetTall = feetTall + 3
-        self.numLeaves = numLeaves + 700
+        self.feetTall = feetTall + 5
+        self.numLeaves = numLeaves + 500
     }
 
     // Creating method for specific growing.
@@ -51,7 +51,7 @@ class Tree {
 }
 
 // Creating tree instance.
-var treeOne = Tree(numLeaves:24500, feetTall:85, type: "Weeping Willow", age: 20)
+var treeOne = Tree(numLeaves:24000, feetTall:70, type: "Weeping Willow", age: 20)
 
 // Display tree using methods.
 print("This tree has \(treeOne.numLeaves) leaves and the tree size is \(treeOne.feetTall)")
@@ -70,4 +70,4 @@ print("This tree has \(treeOne.numLeaves) leaves and the tree size is \(treeOne.
 
 // Call method & display.
 treeOne.loseLeaves()
-print("This tree has \(treeOne.numLeaves) leaves.")
+print("This tree has \(treeOne.numLeaves) leaves, I guess fall is here.")
